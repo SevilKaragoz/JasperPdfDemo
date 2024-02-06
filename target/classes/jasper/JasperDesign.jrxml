@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 8.2.0.final using JasperReports Library version 6.20.3-415f9428cffdb6805c6f85bbb29ebaf18813a2ab  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="partner_report_template" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e5a41a03-4a60-4fa9-9013-a3e090e8c27b">
+	<field name="name" class="java.lang.String"/>
+	<field name="surname" class="java.lang.String"/>
+	<field name="age" class="java.lang.String"/>
+	<title>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="10" width="575" height="15" backcolor="#FE5000" uuid="54e7299d-0303-46ee-a0a2-3d545578ab4e"/>
+				<text><![CDATA[  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="10" width="575" height="15" forecolor="#FFFFFF" uuid="3c1a694a-53ef-4789-8fcc-6f5c317f2db6"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#FE5000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#FE5000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#FE5000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#FE5000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true" pdfEncoding="CP1254"/>
+				</textElement>
+				<text><![CDATA[Template JasperReport]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="50" height="30" forecolor="#002B49" uuid="5866c251-db03-4b71-8d32-05d755a11b6a"/>
+				<box>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true" pdfEncoding="CP1254"/>
+				</textElement>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="0" width="35" height="30" forecolor="#002B49" uuid="a94b3cf3-372b-4c72-b822-fbaa344441c9"/>
+				<box>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true" pdfEncoding="CP1254"/>
+				</textElement>
+				<text><![CDATA[surname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="0" width="50" height="30" forecolor="#002B49" uuid="a94b3cf3-372b-4c72-b822-fbaa344441c9"/>
+				<box>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true" pdfEncoding="CP1254"/>
+				</textElement>
+				<text><![CDATA[age]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Prevent">
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="16" forecolor="#002B49" uuid="539371c1-cb90-45a8-acd0-7e32814c690a"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" pdfEncoding="CP1254"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="50" y="0" width="35" height="16" forecolor="#002B49" uuid="539371c1-cb90-45a8-acd0-7e32814c690a"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" pdfEncoding="CP1254"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{surname}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="85" y="0" width="50" height="16" forecolor="#002B49" uuid="539371c1-cb90-45a8-acd0-7e32814c690a"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#1B1B1B"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" pdfEncoding="CP1254"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
